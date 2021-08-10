@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 app.get("/donate.html", (req, res) => {
-  res.sendFile(__dirname + "/public/donate.html");
+  res.sendFile(__dirname + "/Public/donate.html");
 });
 
 app.post("/paynow", [parseUrl, parseJson], (req, res) => {
